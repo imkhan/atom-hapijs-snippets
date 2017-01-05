@@ -1,0 +1,58 @@
+# Your snippets
+#
+# Atom snippets allow you to enter a simple prefix in the editor and hit tab to
+# expand the prefix into a larger code block with templated values.
+#
+# You can create a new snippet in this file by typing "snip" and then hitting
+# tab.
+#
+# An example CoffeeScript snippet to expand log to console.log:
+#
+# '.source.coffee':
+#   'Console log':
+#     'prefix': 'log'
+#     'body': 'console.log $1'
+#
+# Each scope (e.g. '.source.coffee' above) can only be declared once.
+#
+# This file uses CoffeeScript Object Notation (CSON).
+# If you are unfamiliar with CSON, you can read more about it in the
+# Atom Flight Manual:
+# https://atom.io/docs/latest/using-atom-basic-customization#cson
+
+
+
+".source.js":
+  "require hapi":
+    "prefix": "hpreq"
+    "body": "const Hapi = require('hapi');"
+
+  "Hapi.js new":
+    "prefix": "hpnew",
+    "body": "const server = new Hapi.Server($1);"
+
+  "server connection":
+    "prefix": "hpconn",
+    "body": """
+      server.connection({
+      \thost: '${1:host}',
+      \tport: ${2:port},
+      }); """
+
+  "server route":
+    "prefix": "hproute",
+    "body": """
+      server.route({
+      \tpath: '${1:/path}',
+      \tmethod: '${2:GET}',
+      \thandler: (request, reply) => {
+      \t\treply(${3:response});
+      \t}
+      }); """
+
+  "custom server handler":
+    "prefix": "hphandler",
+    "body": """
+      server.handler('${1:name}', (route, options) => {,
+        \t$2
+      }); """
