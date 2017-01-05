@@ -1,6 +1,5 @@
-# Hapi.js Snippets for Visual Studio Code
-Hapi.js Snippets for Javascript ES6 in Visual Studio Code
-
+# Hapi.js Snippets for Atom Editor
+Hapi.js Snippets for Javascript ES6 in Atom Editor
 ### What are snippets in Atom?
 http://flight-manual.atom.io/using-atom/sections/snippets/
 
