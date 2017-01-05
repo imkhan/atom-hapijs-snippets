@@ -4,8 +4,10 @@ Hapi.js Snippets for Javascript ES6 in Atom Editor
 http://flight-manual.atom.io/using-atom/sections/snippets/
 
 ## Installation
-Type `cmd-shift-p`/`ctrl-shift-p` to launch command palette and choose `Application: Open Your Snippets`.
-This will open 'snippets.cson' file, copy and paste the snippets which you like from my 'snippets.cson' file to yours.
+Please install this package `https://atom.io/packages/modular-snippets`
+`apm install modular-snippets` or search “snippets” under packages within Atom.
+
+Once this package is installed, add my snippets file `snippets/hapijs-snippets.cson` to `~/.atom/snippets/` folder.
 
 ## Usage
 Type part of a snippet, press  `tab`
